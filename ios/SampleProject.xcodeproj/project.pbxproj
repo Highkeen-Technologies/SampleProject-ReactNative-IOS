@@ -14,8 +14,6 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		E73BFEF02E00596B0099CD68 /* HelloMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73BFEEF2E00596B0099CD68 /* HelloMessage.swift */; };
 		E73BFEF32E005AEA0099CD68 /* HelloMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E73BFEF22E005AEA0099CD68 /* HelloMessage.m */; };
-		E73BFEF52E0095640099CD68 /* SecurityCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73BFEF42E0095640099CD68 /* SecurityCheck.swift */; };
-		E73BFEF72E0095F60099CD68 /* SecurityCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = E73BFEF62E0095F60099CD68 /* SecurityCheck.m */; };
 		E73E722A2E02C14400FD9276 /* FridaDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73E72292E02C14400FD9276 /* FridaDetector.swift */; };
 		E73E722C2E02C1CE00FD9276 /* FridaDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = E73E722B2E02C1CE00FD9276 /* FridaDetector.m */; };
 		E73E722E2E02D81E00FD9276 /* SSLPinning.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73E722D2E02D81E00FD9276 /* SSLPinning.swift */; };
@@ -24,6 +22,8 @@
 		E73E72382E03196200FD9276 /* SSLPinning.m in Sources */ = {isa = PBXBuildFile; fileRef = E73E72372E03196200FD9276 /* SSLPinning.m */; };
 		E73E723A2E03356700FD9276 /* api_shreenirmanmitra_com.cer in Resources */ = {isa = PBXBuildFile; fileRef = E73E72392E03356700FD9276 /* api_shreenirmanmitra_com.cer */; };
 		E73E723C2E0338AC00FD9276 /* mjunction_uat.cer in Resources */ = {isa = PBXBuildFile; fileRef = E73E723B2E0338AC00FD9276 /* mjunction_uat.cer */; };
+		E73E72402E03D6C800FD9276 /* SecurityServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73E723F2E03D6C800FD9276 /* SecurityServiceManager.swift */; };
+		E73E72422E03D78800FD9276 /* SecurityServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E73E72412E03D78800FD9276 /* SecurityServiceManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,8 +52,6 @@
 		E73BFEEF2E00596B0099CD68 /* HelloMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloMessage.swift; sourceTree = "<group>"; };
 		E73BFEF12E005AEA0099CD68 /* SampleProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SampleProject-Bridging-Header.h"; sourceTree = "<group>"; };
 		E73BFEF22E005AEA0099CD68 /* HelloMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloMessage.m; sourceTree = "<group>"; };
-		E73BFEF42E0095640099CD68 /* SecurityCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityCheck.swift; sourceTree = "<group>"; };
-		E73BFEF62E0095F60099CD68 /* SecurityCheck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecurityCheck.m; sourceTree = "<group>"; };
 		E73E72292E02C14400FD9276 /* FridaDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridaDetector.swift; sourceTree = "<group>"; };
 		E73E722B2E02C1CE00FD9276 /* FridaDetector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FridaDetector.m; sourceTree = "<group>"; };
 		E73E722D2E02D81E00FD9276 /* SSLPinning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSLPinning.swift; sourceTree = "<group>"; };
@@ -62,6 +60,8 @@
 		E73E72372E03196200FD9276 /* SSLPinning.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSLPinning.m; sourceTree = "<group>"; };
 		E73E72392E03356700FD9276 /* api_shreenirmanmitra_com.cer */ = {isa = PBXFileReference; lastKnownFileType = text; path = api_shreenirmanmitra_com.cer; sourceTree = "<group>"; };
 		E73E723B2E0338AC00FD9276 /* mjunction_uat.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = mjunction_uat.cer; sourceTree = "<group>"; };
+		E73E723F2E03D6C800FD9276 /* SecurityServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityServiceManager.swift; sourceTree = "<group>"; };
+		E73E72412E03D78800FD9276 /* SecurityServiceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecurityServiceManager.m; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -88,8 +88,6 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
 				E73BFEF12E005AEA0099CD68 /* SampleProject-Bridging-Header.h */,
-				E73BFEF42E0095640099CD68 /* SecurityCheck.swift */,
-				E73BFEF62E0095F60099CD68 /* SecurityCheck.m */,
 				E73E72292E02C14400FD9276 /* FridaDetector.swift */,
 				E73E722B2E02C1CE00FD9276 /* FridaDetector.m */,
 				E73E722D2E02D81E00FD9276 /* SSLPinning.swift */,
@@ -98,6 +96,8 @@
 				E73E72372E03196200FD9276 /* SSLPinning.m */,
 				E73E72392E03356700FD9276 /* api_shreenirmanmitra_com.cer */,
 				E73E723B2E0338AC00FD9276 /* mjunction_uat.cer */,
+				E73E723F2E03D6C800FD9276 /* SecurityServiceManager.swift */,
+				E73E72412E03D78800FD9276 /* SecurityServiceManager.m */,
 			);
 			name = SampleProject;
 			sourceTree = "<group>";
@@ -310,15 +310,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E73E722E2E02D81E00FD9276 /* SSLPinning.swift in Sources */,
-				E73BFEF52E0095640099CD68 /* SecurityCheck.swift in Sources */,
+				E73E72402E03D6C800FD9276 /* SecurityServiceManager.swift in Sources */,
 				E73BFEF32E005AEA0099CD68 /* HelloMessage.m in Sources */,
 				E73BFEF02E00596B0099CD68 /* HelloMessage.swift in Sources */,
 				E73E72382E03196200FD9276 /* SSLPinning.m in Sources */,
 				E73E722C2E02C1CE00FD9276 /* FridaDetector.m in Sources */,
 				E73E72322E02DE0B00FD9276 /* CertificateValidator.swift in Sources */,
-				E73BFEF72E0095F60099CD68 /* SecurityCheck.m in Sources */,
 				E73E722A2E02C14400FD9276 /* FridaDetector.swift in Sources */,
 				761780ED2CA45674006654EE /* AppDelegate.swift in Sources */,
+				E73E72422E03D78800FD9276 /* SecurityServiceManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

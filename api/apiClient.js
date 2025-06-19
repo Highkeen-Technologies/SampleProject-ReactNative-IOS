@@ -14,7 +14,6 @@ apiClient.interceptors.request.use(
   async config => {
     try {
       // Call SSL validation before sending the request
-      console.log('CALLING...', SSLPinning);
       await SSLPinning.validateCertificate(
         config.baseURL, // API URL
         //'mjunction_combined.cer' // UAT certificate in assets

@@ -1,5 +1,5 @@
 //
-//  SecurityCheck.swift
+//  SecurityServiceManager.swift
 //  SampleProject
 //
 //  Created by Samik Roy on 16/06/25.
@@ -8,8 +8,8 @@
 import Foundation
 import React
 
-@objc(SecurityCheck)
-class SecurityCheck: NSObject {
+@objc(SecurityServiceManager)
+class SecurityServiceManager: NSObject {
 
   @objc static func requiresMainQueueSetup() -> Bool {
     return true
@@ -23,7 +23,7 @@ class SecurityCheck: NSObject {
   }
 
   @objc
-  func isJailBroken(_ resolve: @escaping RCTPromiseResolveBlock,
+  func isDeviceRooted(_ resolve: @escaping RCTPromiseResolveBlock,
                     rejecter reject: @escaping RCTPromiseRejectBlock) {
     NSLog("This is a Swift log via NSLog isJailBroken")
 

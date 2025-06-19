@@ -7,7 +7,7 @@
  import React, { useEffect, useState } from 'react';
 import { SafeAreaView, StyleSheet, Text, View , NativeModules,Alert} from 'react-native';
 import { startFridaMonitoring } from './src/security';
-const { HelloMessage,SecurityCheck} = NativeModules;
+const { HelloMessage,SecurityServiceManager} = NativeModules;
 import { APP_VERSION, AccessToken, BASE_URL, OS_TYPE, hashKey, secretKey } from './auth_provider/Config';
 import apiClient from './api/apiClient';
 function App() {
@@ -17,14 +17,14 @@ function App() {
   useEffect(() => {
     HelloMessage.sayHello("Samik").then(setName);
     try{
-      SecurityCheck.isJailBroken().then(setJailbreak);
+      SecurityServiceManager.isDeviceRooted().then(setJailbreak);
       checkApi();
     }
     catch(e){
 
     }
    
-    SecurityCheck.isEmulator().then(setEmulator);
+    SecurityServiceManager.isEmulator().then(setEmulator);
     const monitor = startFridaMonitoring(5000); 
     return () => clearInterval(monitor); 
   }, []);
